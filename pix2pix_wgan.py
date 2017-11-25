@@ -460,7 +460,7 @@ def create_model(inputs, targets):
         # minimizing -tf.log will try to get inputs to 1
         # predict_real => 1
         # predict_fake => 0
-        discrim_loss = tf.reduce_mean(predict_real) - tf.reduce_mean(predict_fake)
+        discrim_loss = - tf.reduce_mean(predict_real) + tf.reduce_mean(predict_fake)
 
     with tf.name_scope("generator_loss"):
         # predict_fake => 1
