@@ -5,13 +5,14 @@
 
 
 #### Fengyang: WGAN without L1 distance
-python pix2pix_wgan.py \
-   --mode train \
-   --output_dir maps_trained/ \
-   --max_epochs 100 \
-   --input_dir train/ \
-   --which_direction AtoB \
-   --l1_weight 0
+nohup python pix2pix_wgan.py 
+    --mode train 
+    --output_dir maps_trained/ 
+    --max_epochs 100 
+    --input_dir train/ 
+    --which_direction AtoB 
+    --l1_weight 0
+    > out.txt
    
 #### xxx: WGAN with L1 distance
 python pix2pix_wgan.py \
