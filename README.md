@@ -12,17 +12,12 @@ nohup python pix2pix_wgan.py
     --input_dir train/ 
     --which_direction AtoB 
     --l1_weight 0
+    --checkpoint maps_trained_3
     > out.txt
    
 #### xxx: WGAN with L1 distance
-python pix2pix_wgan.py \
-   --mode train \
-   --output_dir maps_trained/ \
-   --max_epochs 100 \
-   --input_dir train/ \
-   --which_direction AtoB \
-   --l1_weight 1
-   
+nohup python pix2pix_wgan.py --mode train --output_dir maps_trained/ --max_epochs 200  --input_dir train/ --which_direction AtoB --l1_weight 5 > out.txt
+   
 #### xxx: Original GAN
 python pix2pix.py \
    --mode train \
