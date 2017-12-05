@@ -1,7 +1,10 @@
-# 2017 Computational Vision Project
+# 2017 Computational Vision Project: Map2Aerial
 
 ## Team members:
 ### Fengyang Zhang, Jianfeng Chi, Yutong Wang, Rongjia Gao, Wei Qian
+
+This project is a image-to-image translation model using cGAN and cwGAN. The original paper is at:
+https://arxiv.org/abs/1611.07004
 
 
 #### Train WGAN without L1 distance
